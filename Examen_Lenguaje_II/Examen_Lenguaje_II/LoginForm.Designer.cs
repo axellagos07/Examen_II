@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.MostrarContraseñaButton = new System.Windows.Forms.Button();
             this.ContraseñaTextBox = new System.Windows.Forms.TextBox();
             this.UsuarioTextBox = new System.Windows.Forms.TextBox();
@@ -36,14 +37,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CancelarButton = new System.Windows.Forms.Button();
             this.AceptarButton = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // MostrarContraseñaButton
             // 
             this.MostrarContraseñaButton.Image = global::Examen_Lenguaje_II.Properties.Resources.ojo;
             this.MostrarContraseñaButton.Location = new System.Drawing.Point(424, 84);
-            this.MostrarContraseñaButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MostrarContraseñaButton.Margin = new System.Windows.Forms.Padding(4);
             this.MostrarContraseñaButton.Name = "MostrarContraseñaButton";
             this.MostrarContraseñaButton.Size = new System.Drawing.Size(31, 28);
             this.MostrarContraseñaButton.TabIndex = 15;
@@ -52,7 +55,7 @@
             // ContraseñaTextBox
             // 
             this.ContraseñaTextBox.Location = new System.Drawing.Point(137, 87);
-            this.ContraseñaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ContraseñaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ContraseñaTextBox.Name = "ContraseñaTextBox";
             this.ContraseñaTextBox.PasswordChar = '*';
             this.ContraseñaTextBox.Size = new System.Drawing.Size(279, 22);
@@ -61,7 +64,7 @@
             // UsuarioTextBox
             // 
             this.UsuarioTextBox.Location = new System.Drawing.Point(137, 43);
-            this.UsuarioTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UsuarioTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.UsuarioTextBox.Name = "UsuarioTextBox";
             this.UsuarioTextBox.Size = new System.Drawing.Size(279, 22);
             this.UsuarioTextBox.TabIndex = 10;
@@ -112,6 +115,7 @@
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CancelarButton.UseVisualStyleBackColor = true;
+            this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
             // 
             // AceptarButton
             // 
@@ -126,6 +130,11 @@
             this.AceptarButton.Text = "Aceptar";
             this.AceptarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.AceptarButton.UseVisualStyleBackColor = true;
+            this.AceptarButton.Click += new System.EventHandler(this.AceptarButton_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // LoginForm
             // 
@@ -141,10 +150,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginForm";
             this.Text = "LoginForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +170,6 @@
         private System.Windows.Forms.TextBox UsuarioTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
