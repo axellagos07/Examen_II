@@ -18,9 +18,9 @@ namespace Examen_Lenguaje_II
 
         private void ClientestoolStripButton_Click(object sender, System.EventArgs e)
         {
-            ClientesForm clientesForm = new ClientesForm();
+            ClienteForm cliente = new ClienteForm();
             //clientesForm.MdiParent = this;
-            clientesForm.Show();
+            cliente.Show();
         }
 
         private void TiketstoolStripButton_Click(object sender, System.EventArgs e)
@@ -34,5 +34,6 @@ namespace Examen_Lenguaje_II
         {
 
         }
+
     }
 }

@@ -60,11 +60,11 @@
     <Compile Include="BuscarClienteForm.Designer.cs">
       <DependentUpon>BuscarClienteForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientesForm.cs">
+    <Compile Include="ClienteForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientesForm.Designer.cs">
-      <DependentUpon>ClientesForm.cs</DependentUpon>
+    <Compile Include="ClienteForm.Designer.cs">
+      <DependentUpon>ClienteForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -95,8 +95,8 @@
     <EmbeddedResource Include="BuscarClienteForm.resx">
       <DependentUpon>BuscarClienteForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientesForm.resx">
-      <DependentUpon>ClientesForm.cs</DependentUpon>
+    <EmbeddedResource Include="ClienteForm.resx">
+      <DependentUpon>ClienteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -114,6 +114,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TicketsForm.resx">
+      <DependentUpon>TicketsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UsuarioForm.resx">
       <DependentUpon>UsuarioForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +157,15 @@
       <Project>{4df88272-5cbf-4756-bcef-263d02bc3999}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clasificacion%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boleto.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

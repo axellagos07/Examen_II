@@ -52,6 +52,7 @@
             this.Cancelarbutton.TabIndex = 8;
             this.Cancelarbutton.Text = "Cancelar";
             this.Cancelarbutton.UseVisualStyleBackColor = true;
+            this.Cancelarbutton.Click += new System.EventHandler(this.Cancelarbutton_Click);
             // 
             // Aceptarbutton
             // 
@@ -61,6 +62,7 @@
             this.Aceptarbutton.TabIndex = 7;
             this.Aceptarbutton.Text = "Aceptar";
             this.Aceptarbutton.UseVisualStyleBackColor = true;
+            this.Aceptarbutton.Click += new System.EventHandler(this.Aceptarbutton_Click);
             // 
             // NombretextBox
             // 
@@ -68,6 +70,7 @@
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(531, 22);
             this.NombretextBox.TabIndex = 6;
+            this.NombretextBox.TextChanged += new System.EventHandler(this.NombretextBox_TextChanged);
             // 
             // label1
             // 
@@ -92,6 +95,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BuscarClienteForm";
             this.Text = "BuscarClienteForm";
+            this.Load += new System.EventHandler(this.BuscarClienteForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ClientesdataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
